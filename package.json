@@ -1,0 +1,21 @@
+{
+  "name": "lucky-clover",
+  "version": "0.0.1",
+  "description": "Sidescrolling Luck Platformer",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucky-Clover-Hackathon/Lucky-Clover.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Lucky Clover Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lucky-Clover-Hackathon/Lucky-Clover/issues"
+  },
+  "homepage": "https://github.com/Lucky-Clover-Hackathon/Lucky-Clover#readme"
+}
