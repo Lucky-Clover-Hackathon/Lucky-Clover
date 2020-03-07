@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 5279722831484174313}
   - component: {fileID: 5279722831484174315}
   - component: {fileID: 5279722831484174312}
+  - component: {fileID: 2388403504587984212}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: PixelPerfectCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,7 +92,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5279722831484174314}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
   m_Name: 
@@ -104,3 +105,16 @@ MonoBehaviour:
   m_CropFrameX: 1
   m_CropFrameY: 1
   m_StretchFill: 0
+--- !u!114 &2388403504587984212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5279722831484174314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96aa8f11334a40b104e2fc92714b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothingAmt: 0.95
