@@ -1,58 +1,52 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 0241464bc5584644eae4103253d31d99
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1780473161056359165
-    second: enemy_shroom_stand
+    second: enemy_shroom_spritesheet_0
   - first:
       213: 803372669232917926
-    second: enemy_shroom_stand1
+    second: enemy_shroom_spritesheet_1
   - first:
       213: -9145791321167284800
-    second: enemy_shroom_stand2
+    second: enemy_shroom_spritesheet_2
   - first:
       213: -8694401959149479202
-    second: enemy_shroom_stand3
+    second: enemy_shroom_spritesheet_3
   - first:
       213: 1753059719097788280
-    second: enemy_shroom_stand4
+    second: enemy_shroom_spritesheet_4
   - first:
       213: 8018608009809513872
-    second: enemy_shroom_stand5
+    second: enemy_shroom_spritesheet_5
   - first:
       213: -7810001013886108831
-    second: enemy_shroom_bored
+    second: enemy_shroom_spritesheet_6
   - first:
       213: 5011476637905269458
-    second: enemy_shroom_bored1
+    second: enemy_shroom_spritesheet_7
   - first:
       213: -5633526531277363215
-    second: enemy_shroom_bored3
+    second: enemy_shroom_spritesheet_8
   - first:
       213: -7222173655825437907
-    second: enemy_shroom_bored4
+    second: enemy_shroom_spritesheet_9
   - first:
       213: -9070219906108045761
-    second: enemy_shroom_walk
+    second: enemy_shroom_spritesheet_10
   - first:
       213: 6567106734234342225
-    second: enemy_shroom_walk1
+    second: enemy_shroom_spritesheet_11
   - first:
       213: 6153094260901600317
-    second: enemy_shroom_walk2
+    second: enemy_shroom_spritesheet_12
   - first:
       213: 7331242104993777820
-    second: enemy_shroom_walk3
+    second: enemy_shroom_spritesheet_13
   - first:
       213: -2968148451400264622
-    second: enemy_shroom_walk4
-=======
-guid: 07a6008cc2ab77c4d97b1e7af113f3e7
-TextureImporter:
-  internalIDToNameTable: []
->>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
+    second: enemy_shroom_spritesheet_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -82,37 +76,23 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
     filterMode: 0
-=======
-    filterMode: -1
->>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
     aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
-=======
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
->>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -127,21 +107,20 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,8 +131,8 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -164,7 +143,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_shroom_stand
+      name: enemy_shroom_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -178,14 +157,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30d6e17e71d7a47e0800000000000000
+      spriteID: 1fd989713aac78c3986b5461cde242b8
       internalID: -1780473161056359165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_stand1
+      name: enemy_shroom_spritesheet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -199,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ada2ebaf27262b00800000000000000
+      spriteID: c5d50885d36505a508058916160c06bc
       internalID: 803372669232917926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_stand2
+      name: enemy_shroom_spritesheet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -220,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c539f7ff3f931180800000000000000
+      spriteID: cee00519543496948b000daeb86be772
       internalID: -9145791321167284800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_stand3
+      name: enemy_shroom_spritesheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -241,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eda5f6aab77475780800000000000000
+      spriteID: 6ebf8463105e8353e90f18f5b8fd99d8
       internalID: -8694401959149479202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_stand4
+      name: enemy_shroom_spritesheet_4
       rect:
         serializedVersion: 2
         x: 64
@@ -262,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 877aed2c68e145810800000000000000
+      spriteID: 5129f7cf6707d9e0bb07cce5e699aed1
       internalID: 1753059719097788280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_stand5
+      name: enemy_shroom_spritesheet_5
       rect:
         serializedVersion: 2
         x: 80
@@ -283,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d4cc12081d74f60800000000000000
+      spriteID: cff450d1ae29ef8f6ac6a85c0dcb2ec8
       internalID: 8018608009809513872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_bored
+      name: enemy_shroom_spritesheet_6
       rect:
         serializedVersion: 2
         x: 96
@@ -304,14 +283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16bb0eff47d4d9390800000000000000
+      spriteID: f187fabb244cac7b18361b12bdf5c28b
       internalID: -7810001013886108831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_bored1
+      name: enemy_shroom_spritesheet_7
       rect:
         serializedVersion: 2
         x: 112
@@ -325,14 +304,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2338243775c8540800000000000000
+      spriteID: 147a38877c49a899c95498331b61189e
       internalID: 5011476637905269458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_bored3
+      name: enemy_shroom_spritesheet_8
       rect:
         serializedVersion: 2
         x: 128
@@ -346,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f7697ea771b1d1b0800000000000000
+      spriteID: f6d1d5c8f8c8cb14184806832a925b9d
       internalID: -5633526531277363215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_bored4
+      name: enemy_shroom_spritesheet_9
       rect:
         serializedVersion: 2
         x: 144
@@ -367,14 +346,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2b2752235fa5cb90800000000000000
+      spriteID: e91e76db94ada18178112642054dae45
       internalID: -7222173655825437907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_walk
+      name: enemy_shroom_spritesheet_10
       rect:
         serializedVersion: 2
         x: 0
@@ -388,14 +367,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f36c0cd2d0b102280800000000000000
+      spriteID: 244a306d954e50817b629dc28af339e2
       internalID: -9070219906108045761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_walk1
+      name: enemy_shroom_spritesheet_11
       rect:
         serializedVersion: 2
         x: 16
@@ -409,14 +388,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1531d10e7cc032b50800000000000000
+      spriteID: c8fa975e658b962d2b4d4673983cdb08
       internalID: 6567106734234342225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_walk2
+      name: enemy_shroom_spritesheet_12
       rect:
         serializedVersion: 2
         x: 32
@@ -430,14 +409,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3cd88a31ae246550800000000000000
+      spriteID: dd91098a19fa4a7339c24762f520bb84
       internalID: 6153094260901600317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_walk3
+      name: enemy_shroom_spritesheet_13
       rect:
         serializedVersion: 2
         x: 48
@@ -451,14 +430,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c988a861addcdb560800000000000000
+      spriteID: 464adc06bc757027cadf095fbb0b9a56
       internalID: 7331242104993777820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_shroom_walk4
+      name: enemy_shroom_spritesheet_14
       rect:
         serializedVersion: 2
         x: 64
@@ -472,17 +451,12 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25459a995b40fc6d0800000000000000
+      spriteID: ee6da48632d6bb0258984b25087c0ba7
       internalID: -2968148451400264622
       vertices: []
       indices: 
       edges: []
       weights: []
-=======
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
->>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
     outline: []
     physicsShape: []
     bones: []
