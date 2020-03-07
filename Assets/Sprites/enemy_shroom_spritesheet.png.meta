@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 0241464bc5584644eae4103253d31d99
 TextureImporter:
   internalIDToNameTable:
@@ -47,6 +48,11 @@ TextureImporter:
   - first:
       213: -2968148451400264622
     second: enemy_shroom_walk4
+=======
+guid: 07a6008cc2ab77c4d97b1e7af113f3e7
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -76,7 +82,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: -1
+>>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -85,14 +95,24 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
+=======
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+>>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -115,6 +135,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -457,6 +478,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+>>>>>>> f340c6d530817b31bd6e100fde8b40864fe70574
     outline: []
     physicsShape: []
     bones: []
