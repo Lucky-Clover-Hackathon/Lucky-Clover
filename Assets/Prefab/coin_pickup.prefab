@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2875882698118671000}
   - component: {fileID: 9066919923656567841}
   - component: {fileID: 8347899486420984837}
+  - component: {fileID: 8828399867849922825}
   m_Layer: 0
-  m_Name: coin_bullet
-  m_TagString: Bullet
+  m_Name: coin_pickup
+  m_TagString: Gold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +125,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 7
 --- !u!70 &8347899486420984837
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -135,9 +136,21 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.008858204, y: 0}
   m_Size: {x: 0.521657, y: 1}
   m_Direction: 0
+--- !u!114 &8828399867849922825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2875882698118671001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d3d0b2e44c485da42e17a15812ba09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

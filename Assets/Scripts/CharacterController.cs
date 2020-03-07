@@ -1,8 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class CharacterController : MonoBehaviour
 {
+	private int _health;
+	public int Health
+	{
+		get => _health;
+		set => this._health = Mathf.Clamp(value, 0, 3);
+	}
+
 	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
 	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
@@ -40,6 +49,17 @@ public class CharacterController : MonoBehaviour
 
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+		
+	}
+
+	private void Start()
+	{
+		InvokeRepeating("ScoreTick",0f,1.0f);
+	}
+
+	private void ScoreTick()
+	{
+		UIController.AddScore(1);
 	}
 
 	private void FixedUpdate()
@@ -149,5 +169,17 @@ public class CharacterController : MonoBehaviour
 		
 		bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(m_FacingRight ? 40f: 0f,0f);
 		
+	}
+
+	public void Injure()
+	{
+		Health--;
+		UIController.UpdateHealth(Health);
+	}
+
+	public void Heal()
+	{
+		Health++;
+		UIController.UpdateHealth(Health);
 	}
 }

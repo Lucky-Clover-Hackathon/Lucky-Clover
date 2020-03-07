@@ -8,10 +8,13 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CharacterController.cs" t="Include" />
+          <e p="Clover.cs" t="Include" />
+          <e p="Coin.cs" t="Include" />
           <e p="Enemies" t="Include">
             <e p="enemy.cs" t="Include" />
           </e>
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="UIController.cs" t="Include" />
         </e>
       </e>
       <e p="Lucky-Clover.sln" t="IncludeFlat" />

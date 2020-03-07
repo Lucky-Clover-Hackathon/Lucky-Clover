@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2875882698118670982}
   - component: {fileID: 2875882698118670983}
-  - component: {fileID: 2875882698118671000}
   - component: {fileID: 9066919923656567841}
-  - component: {fileID: 8347899486420984837}
+  - component: {fileID: 6011941359488796158}
+  - component: {fileID: 8306300226249172266}
   m_Layer: 0
-  m_Name: coin_bullet
-  m_TagString: Bullet
+  m_Name: clover_pickup
+  m_TagString: Gold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,8 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7148529381030172924, guid: d113f02b1c09ad9b39fbe8092998dd22,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b6387a84f9c1958ca52258b51d6989f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,25 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2875882698118671000
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2875882698118671001}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b3fc3dc4c88cf05fb9013ce1beb15728, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &9066919923656567841
 Rigidbody2D:
   serializedVersion: 4
@@ -124,9 +104,21 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!70 &8347899486420984837
-CapsuleCollider2D:
+  m_Constraints: 7
+--- !u!114 &6011941359488796158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2875882698118671001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d4dc5783653df84a19c75e9a0a0f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &8306300226249172266
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,9 +127,9 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008858204, y: 0}
-  m_Size: {x: 0.521657, y: 1}
-  m_Direction: 0
+  m_Offset: {x: -0.04650563, y: -0.039862037}
+  serializedVersion: 2
+  m_Radius: 0.32062143
