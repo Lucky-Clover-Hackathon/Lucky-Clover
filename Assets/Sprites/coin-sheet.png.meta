@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 655989adfded6eda3a06c818bb4a464b
+guid: d113f02b1c09ad9b39fbe8092998dd22
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -870821889412280475
-    second: Leprechaun_0
+      213: 7148529381030172924
+    second: coin-sheet_0
   - first:
-      213: 8191332663484306875
-    second: Leprechaun_1
+      213: 4929667067585260007
+    second: coin-sheet_1
   - first:
-      213: -6793410917189157706
-    second: Leprechaun_2
+      213: -3391619346338705221
+    second: coin-sheet_2
   - first:
-      213: 5105456344099041878
-    second: Leprechaun_3
+      213: 3479452640241806226
+    second: coin-sheet_3
   - first:
-      213: 3762428235303373401
-    second: Leprechaun_4
+      213: -6831134334628306435
+    second: coin-sheet_4
   - first:
-      213: 9197443725573256735
-    second: Leprechaun_5
-  - first:
-      213: 9138334576048917504
-    second: Leprechaun_6
-  - first:
-      213: -5803189103134588990
-    second: Leprechaun_7
+      213: 5317524886014904132
+    second: coin-sheet_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -87,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Leprechaun_0
+      name: coin-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5628f7343c8a38e3d88715d8d0e73ede
-      internalID: -870821889412280475
+      spriteID: 2f3eca4783c912e2386a166b988680b5
+      internalID: 7148529381030172924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leprechaun_1
+      name: coin-sheet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -157,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e75a0325b4ad6d17ca753477fdc56a18
-      internalID: 8191332663484306875
+      spriteID: 963a8a848163a4a6ca4d0a1d172a4f9c
+      internalID: 4929667067585260007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leprechaun_2
+      name: coin-sheet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -178,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c20a6654ce89a19aa15e3cf61aadcf4
-      internalID: -6793410917189157706
+      spriteID: dc3ea44caa7fb8ff38b5b58235390d44
+      internalID: -3391619346338705221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leprechaun_3
+      name: coin-sheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -199,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2dd7b94175a5b49c870a0a914395b8b
-      internalID: 5105456344099041878
+      spriteID: f844717d06fc187709100f586305a754
+      internalID: 3479452640241806226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leprechaun_4
+      name: coin-sheet_4
       rect:
         serializedVersion: 2
         x: 64
@@ -220,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcf6c1f4075dbb67c8e834cbe9d2878a
-      internalID: 3762428235303373401
+      spriteID: a275428218767a154a21c5459b30033c
+      internalID: -6831134334628306435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Leprechaun_5
+      name: coin-sheet_5
       rect:
         serializedVersion: 2
         x: 80
@@ -241,50 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94d46b40af80e0ca996cb9c098e06e56
-      internalID: 9197443725573256735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leprechaun_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97bdc83da20591f0e96f26dddf935a88
-      internalID: 9138334576048917504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Leprechaun_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38c674d3103fa18fa9c360236f18dc39
-      internalID: -5803189103134588990
+      spriteID: 2f187a9c82c6653a4918927130567445
+      internalID: 5317524886014904132
       vertices: []
       indices: 
       edges: []
