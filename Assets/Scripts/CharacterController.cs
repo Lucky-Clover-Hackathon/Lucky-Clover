@@ -11,7 +11,7 @@ public class CharacterController : MonoBehaviour
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
 	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
-
+	[SerializeField] private GameObject m_GoldProjectile;
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
@@ -29,11 +29,12 @@ public class CharacterController : MonoBehaviour
 
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
+	private SpriteRenderer m_spriteRenderer;
 
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
-
+		m_spriteRenderer = GetComponent<SpriteRenderer>();
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
 
@@ -139,8 +140,14 @@ public class CharacterController : MonoBehaviour
 		m_FacingRight = !m_FacingRight;
 
 		// Multiply the player's x local scale by -1.
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
+		m_spriteRenderer.flipX = !m_FacingRight;
+	}
+
+	public void Fire()
+	{
+		var bullet = Instantiate(m_GoldProjectile);
+		
+		bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(m_FacingRight ? 40f: 0f,0f);
+		
 	}
 }
