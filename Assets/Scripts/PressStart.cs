@@ -30,7 +30,7 @@ public class PressStart : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("Start"))
+        if (Input.GetButton("Start"))
         {
             SceneManager.LoadScene("Level1");
         }
