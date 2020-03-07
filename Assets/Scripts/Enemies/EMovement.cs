@@ -96,11 +96,11 @@ public class EMovement : MonoBehaviour
         {
             if (transform.position.x < player.position.x)
             {
-               float right = rb2d.velocity = new Vector2(moveSpeed, 0);
+                rb2d.velocity = new Vector2(moveSpeed, 0);
             }
             else
             {
-               float left = rb2d.velocity = new Vector2(-moveSpeed, 0);
+                rb2d.velocity = new Vector2(-moveSpeed, 0);
             }
         }
 

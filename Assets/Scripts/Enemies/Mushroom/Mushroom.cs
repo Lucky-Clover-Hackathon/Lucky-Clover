@@ -18,7 +18,7 @@ public class Mushroom : MonoBehaviour
 
     private void Update()
     {
-
+        
     }
 
 }
