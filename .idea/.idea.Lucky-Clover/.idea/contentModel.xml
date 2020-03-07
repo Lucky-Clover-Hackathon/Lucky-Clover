@@ -212,9 +212,12 @@
           <e p="CharacterController.cs" t="Include" />
           <e p="Clover.cs" t="Include" />
           <e p="Coin.cs" t="Include" />
+          <e p="DontDestroyOnLoad.cs" t="Include" />
           <e p="Enemies" t="Include">
             <e p="Enemy_Movement.cs" t="Include" />
           </e>
+          <e p="EnemySpawner.cs" t="Include" />
+          <e p="LevelLoader.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PressStart.cs" t="Include" />
           <e p="UIController.cs" t="Include" />

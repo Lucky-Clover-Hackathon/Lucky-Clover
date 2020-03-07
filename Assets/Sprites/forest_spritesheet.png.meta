@@ -4,82 +4,82 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -2713662331051039808
-    second: forest_spritesheet_0
+    second: grass
   - first:
       213: -2487204312654226371
-    second: forest_spritesheet_1
+    second: dirt
   - first:
       213: 6152001977514103521
-    second: forest_spritesheet_2
+    second: grass_slope
   - first:
       213: -1674669709334328530
-    second: forest_spritesheet_3
+    second: grass_platform
   - first:
       213: -6677551137925539771
-    second: forest_spritesheet_4
+    second: tree_trunk
   - first:
       213: -183866840988444920
-    second: forest_spritesheet_5
+    second: tree_branch
   - first:
       213: 22252354718011148
-    second: forest_spritesheet_6
+    second: tree_crown
   - first:
       213: 8148865827760121812
-    second: forest_spritesheet_7
+    second: gtree_branch_2
   - first:
       213: 3919628756539146957
-    second: forest_spritesheet_8
+    second: sky_0
   - first:
       213: -2964752658422888297
-    second: forest_spritesheet_9
+    second: sky_1
   - first:
       213: 6950402059223837628
-    second: forest_spritesheet_10
+    second: sky_2
   - first:
       213: 7336679360864362099
-    second: forest_spritesheet_11
+    second: sky_3
   - first:
       213: 2283695116436664126
-    second: forest_spritesheet_12
+    second: sky_4
   - first:
       213: -6263983022893379544
-    second: forest_spritesheet_13
+    second: sky_5
   - first:
       213: -1664369610786425883
-    second: forest_spritesheet_14
+    second: sky_6
   - first:
       213: 202371462774341521
-    second: forest_spritesheet_15
+    second: sky_7
   - first:
       213: -8983059031592835218
-    second: forest_spritesheet_16
+    second: sky_8
   - first:
       213: -1861503363957483918
-    second: forest_spritesheet_17
+    second: water_0
   - first:
       213: 5445363168556665487
-    second: forest_spritesheet_18
+    second: water_1
   - first:
       213: -1277846988144399553
-    second: forest_spritesheet_19
+    second: water_2
   - first:
       213: 4123319967896161953
-    second: forest_spritesheet_20
+    second: water_3
   - first:
       213: -152812884908034234
-    second: forest_spritesheet_21
+    second: tree_0
   - first:
       213: -5559471932688852813
-    second: forest_spritesheet_22
+    second: tree_1
   - first:
       213: -865348178119352333
-    second: forest_spritesheet_23
+    second: tree_2
   - first:
       213: -2128896797870954890
-    second: forest_spritesheet_24
+    second: tree_3
   - first:
       213: -7538324413647232581
-    second: forest_spritesheet_25
+    second: tree_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -176,7 +176,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: forest_spritesheet_0
+      name: grass
       rect:
         serializedVersion: 2
         x: 0
@@ -184,7 +184,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,7 +197,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_1
+      name: dirt
       rect:
         serializedVersion: 2
         x: 16
@@ -205,7 +205,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,7 +218,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_2
+      name: grass_slope
       rect:
         serializedVersion: 2
         x: 32
@@ -226,7 +226,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,7 +239,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_3
+      name: grass_platform
       rect:
         serializedVersion: 2
         x: 48
@@ -247,7 +247,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,7 +260,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_4
+      name: tree_trunk
       rect:
         serializedVersion: 2
         x: 0
@@ -268,7 +268,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,7 +281,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_5
+      name: tree_branch
       rect:
         serializedVersion: 2
         x: 16
@@ -289,7 +289,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,7 +302,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_6
+      name: tree_crown
       rect:
         serializedVersion: 2
         x: 32
@@ -310,7 +310,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,7 +323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_7
+      name: gtree_branch_2
       rect:
         serializedVersion: 2
         x: 48
@@ -331,7 +331,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,7 +344,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_8
+      name: sky_0
       rect:
         serializedVersion: 2
         x: 0
@@ -352,7 +352,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,7 +365,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_9
+      name: sky_1
       rect:
         serializedVersion: 2
         x: 16
@@ -373,7 +373,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,7 +386,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_10
+      name: sky_2
       rect:
         serializedVersion: 2
         x: 32
@@ -394,7 +394,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,7 +407,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_11
+      name: sky_3
       rect:
         serializedVersion: 2
         x: 48
@@ -415,7 +415,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,7 +428,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_12
+      name: sky_4
       rect:
         serializedVersion: 2
         x: 64
@@ -436,7 +436,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -449,7 +449,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_13
+      name: sky_5
       rect:
         serializedVersion: 2
         x: 80
@@ -457,7 +457,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -470,7 +470,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_14
+      name: sky_6
       rect:
         serializedVersion: 2
         x: 96
@@ -478,7 +478,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -491,7 +491,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_15
+      name: sky_7
       rect:
         serializedVersion: 2
         x: 112
@@ -499,7 +499,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -512,7 +512,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_16
+      name: sky_8
       rect:
         serializedVersion: 2
         x: 128
@@ -520,7 +520,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -533,7 +533,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_17
+      name: water_0
       rect:
         serializedVersion: 2
         x: 0
@@ -541,7 +541,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_18
+      name: water_1
       rect:
         serializedVersion: 2
         x: 16
@@ -562,7 +562,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,7 +575,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_19
+      name: water_2
       rect:
         serializedVersion: 2
         x: 32
@@ -583,7 +583,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,7 +596,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_20
+      name: water_3
       rect:
         serializedVersion: 2
         x: 48
@@ -604,7 +604,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,7 +617,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_21
+      name: tree_0
       rect:
         serializedVersion: 2
         x: 0
@@ -625,7 +625,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,7 +638,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_22
+      name: tree_1
       rect:
         serializedVersion: 2
         x: 16
@@ -646,7 +646,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,7 +659,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_23
+      name: tree_2
       rect:
         serializedVersion: 2
         x: 32
@@ -667,7 +667,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -680,7 +680,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_24
+      name: tree_3
       rect:
         serializedVersion: 2
         x: 48
@@ -688,7 +688,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -701,7 +701,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forest_spritesheet_25
+      name: tree_4
       rect:
         serializedVersion: 2
         x: 64
@@ -709,7 +709,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
