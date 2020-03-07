@@ -26,16 +26,16 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-         if (Input.GetButtonDown("Jump"))
-         {
-             jump = true;
-         }
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        if (Input.GetButtonDown("Jump"))
+        {
+            jump = true;
+        }
 
-         if (Input.GetButtonDown("Fire1"))
-         {
-             fire = true;
-         }
+        if (Input.GetButtonDown("Fire1"))
+        {
+            fire = true;
+        }
     }
 
     private void FixedUpdate()
@@ -45,11 +45,12 @@ public class PlayerMovement : MonoBehaviour
         cController.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         if (fire)
         {
-            
+
             fire = false;
             cAnimator.Play("leprechaun_punch");
-            cController.Fire();       
+            cController.Fire();
         };
         jump = false;
     }
 }
+   
