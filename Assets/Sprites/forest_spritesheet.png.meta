@@ -55,30 +55,51 @@ TextureImporter:
     second: sky_8
   - first:
       213: -1861503363957483918
-    second: water_0
+    second: sky_6
   - first:
       213: 5445363168556665487
-    second: water_1
+    second: sky_7
   - first:
       213: -1277846988144399553
-    second: water_2
+    second: sky_8
   - first:
       213: 4123319967896161953
-    second: water_3
+    second: sky_9
   - first:
       213: -152812884908034234
-    second: tree_0
+    second: water_0
   - first:
       213: -5559471932688852813
-    second: tree_1
+    second: water_1
   - first:
       213: -865348178119352333
-    second: tree_2
+    second: water_2
   - first:
       213: -2128896797870954890
-    second: tree_3
+    second: water_3
   - first:
       213: -7538324413647232581
+    second: water_4
+  - first:
+      213: -2713662331051039808
+    second: grass_slope2
+  - first:
+      213: -8131015285519541747
+    second: sky_10
+  - first:
+      213: 6399430291284773974
+    second: tree_0
+  - first:
+      213: -3105659087322419395
+    second: tree_1
+  - first:
+      213: -25497680464327838
+    second: tree_2
+  - first:
+      213: -2487204312654226371
+    second: tree_3
+  - first:
+      213: -2187617102101193605
     second: tree_4
   externalObjects: {}
   serializedVersion: 10
@@ -221,7 +242,7 @@ TextureImporter:
       name: grass_slope
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 144
         width: 16
         height: 16
@@ -473,69 +494,6 @@ TextureImporter:
       name: sky_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43d58d343865ee490b41408c91652e08
-      internalID: -1664369610786425883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sky_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cca82510b2e9ee7e2b1b1af014c716d9
-      internalID: 202371462774341521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sky_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc180f808395c7b948346599b57a34f0
-      internalID: -8983059031592835218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_0
-      rect:
-        serializedVersion: 2
         x: 0
         y: 96
         width: 16
@@ -554,7 +512,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: water_1
+      name: sky_7
       rect:
         serializedVersion: 2
         x: 16
@@ -575,7 +533,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: water_2
+      name: sky_8
       rect:
         serializedVersion: 2
         x: 32
@@ -596,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: water_3
+      name: sky_9
       rect:
         serializedVersion: 2
         x: 48
@@ -617,7 +575,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_0
+      name: water_0
       rect:
         serializedVersion: 2
         x: 0
@@ -638,7 +596,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_1
+      name: water_1
       rect:
         serializedVersion: 2
         x: 16
@@ -659,7 +617,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_2
+      name: water_2
       rect:
         serializedVersion: 2
         x: 32
@@ -680,7 +638,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_3
+      name: water_3
       rect:
         serializedVersion: 2
         x: 48
@@ -701,7 +659,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_4
+      name: water_4
       rect:
         serializedVersion: 2
         x: 64
@@ -717,6 +675,153 @@ TextureImporter:
       bones: []
       spriteID: 8604a8fed79bfbbc38926993db6df6ac
       internalID: -7538324413647232581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_slope2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15f6ca792fa53f8faceacad844f821b
+      internalID: -2713662331051039808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sky_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259ab0cfd1d156edaa933435efd0f35a
+      internalID: -8131015285519541747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2316fd4014914a2f696e668b91c5b65e
+      internalID: 6399430291284773974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777624a1f6b1ef8c0b2072749551318f
+      internalID: -3105659087322419395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fca361f3d4fe79ce895736bc0b2ee6d
+      internalID: -25497680464327838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611060a39e2b0e402966118075a900fa
+      internalID: -2487204312654226371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0103405a3a9a274a98a60d7264e99ac8
+      internalID: -2187617102101193605
       vertices: []
       indices: 
       edges: []
