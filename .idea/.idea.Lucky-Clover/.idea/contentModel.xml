@@ -216,6 +216,7 @@
             <e p="Enemy_Movement.cs" t="Include" />
           </e>
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="PressStart.cs" t="Include" />
           <e p="UIController.cs" t="Include" />
         </e>
       </e>
