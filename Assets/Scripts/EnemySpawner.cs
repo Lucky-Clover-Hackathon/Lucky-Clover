@@ -44,7 +44,7 @@ public class EnemySpawner : MonoBehaviour
                     Vector2 playerPosition = (Vector2)player.transform.position;
                     if ( Vector2.Distance(spawnPosition, playerPosition  ) > maxClosestToPlayerSpawnPos )
                     {
-                        int rE = Random.Range(0, enemies.Length);
+                        int rE = Random.Range(0, enemies.Length - 1);
 
                         Instantiate(enemies[rE], spawnPosition, Quaternion.identity);
 
