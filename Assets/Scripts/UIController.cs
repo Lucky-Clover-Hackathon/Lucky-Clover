@@ -7,18 +7,15 @@ using UnityEngine.UI;
 
 public static class UIController
 {
-    private static Text m_CloverScore;
     private static Text m_HighScore;
     private static Image[] m_Hearts;
 
     private static int m_Score = 0;
-    private static int m_Clovers = 0;
 
 
     // Start is called before the first frame update
     static UIController()
     {
-        m_CloverScore = GameObject.FindGameObjectWithTag("CloverScore").GetComponent<Text>();
         m_HighScore = GameObject.FindGameObjectWithTag("HighScore").GetComponent<Text>();
         m_Hearts = GameObject.FindGameObjectWithTag("HeartContainer").GetComponentsInChildren<Image>();
     }
@@ -27,18 +24,6 @@ public static class UIController
     {
         m_Score += score;
         m_HighScore.text = m_Score.ToString("D8");
-    }
-
-    public static void GetClover()
-    {
-        m_Clovers = +1;
-        m_CloverScore.text = m_Clovers.ToString("D3");
-    }
-
-    public static void LoseClover()
-    {
-        m_Clovers -= 1;
-        m_CloverScore.text = m_Clovers.ToString("D3");
     }
 
     public static void UpdateHealth(int health)
