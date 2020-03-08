@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -42,19 +43,24 @@ public class EMovement : MonoBehaviour
     float moveSpeed;
     Rigidbody2D rb2d;
     BoxCollider2D bc2d;
+
+    private delegate IEnumerator HarmPlayer ();
+
+    private HarmPlayer onHarmPlayer;
     
     public UnityEvent OnLandEvent;
     [SerializeField] private int pointBonus = 200;
 
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
-
+    
         private void Awake()
         {    m_spriteRenderer = GetComponent<SpriteRenderer>();
             if (OnLandEvent == null)
                 OnLandEvent = new UnityEvent();
-
+    
             player = GameObject.FindGameObjectWithTag("Player").transform;
+            onHarmPlayer += player.gameObject.GetComponent<CharacterController>().Harm;
         }
 
         private void FixedUpdate()
@@ -131,5 +137,17 @@ public class EMovement : MonoBehaviour
             }
         }
 
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.collider.CompareTag("Player"))
+            {
+                other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(m_FacingRight ? 50f: -50f,10f);
+                if (other.transform.position.y > gameObject.transform.position.y && Mathf.Abs(other.transform.position.x -gameObject.transform.position.x) < .5f)
+                {
+                    Harm();
+                }
 
-   }
+                StartCoroutine(onHarmPlayer());
+            }
+        }
+}
