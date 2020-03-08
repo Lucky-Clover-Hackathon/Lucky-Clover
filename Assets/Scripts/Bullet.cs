@@ -12,6 +12,10 @@ public class Bullet : MonoBehaviour
             //other.Hurt(1);
             
         }
+        else if (other.collider.CompareTag("Player"))
+        {
+            return;
+        }
         Destroy(gameObject);
     }
 }
