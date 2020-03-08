@@ -53,14 +53,13 @@ public class PlayerMovement : MonoBehaviour
             cController.Fire();
         };
         jump = false;
-        if (Mathf.Abs(gameObject.transform.position.y) > maxY)
-        {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x , -gameObject.transform.position.y, gameObject.transform.position.z);
-        }
-        if (Mathf.Abs(gameObject.transform.position.x) > maxX)
-        {
-            gameObject.transform.position = new Vector3(-gameObject.transform.position.x , gameObject.transform.position.y, gameObject.transform.position.z);
-        }
+        // if (Mathf.Abs(gameObject.transform.position.y) > maxY)
+        // {
+        //     gameObject.transform.position = new Vector3(gameObject.transform.position.x , -gameObject.transform.position.y, gameObject.transform.position.z);
+        // }
+        // if (Mathf.Abs(gameObject.transform.position.x) > maxX)
+        // {
+        //     gameObject.transform.position = new Vector3(-gameObject.transform.position.x , gameObject.transform.position.y, gameObject.transform.position.z);
+        // }
     }
 }
-   
