@@ -27,6 +27,7 @@ public class EMovement : MonoBehaviour
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     private Vector3 m_Velocity = Vector3.zero;
     private SpriteRenderer m_spriteRenderer;
+    public Animator animator;
 
     [Header("Events")]
     [Space]
@@ -97,11 +98,13 @@ public class EMovement : MonoBehaviour
             if (transform.position.x < player.position.x)
             {
                 rb2d.velocity = new Vector2(moveSpeed, 0);
+                animator.SetFloat("Speed", moveSpeed);
             }
             else
             {
                 rb2d.velocity = new Vector2(-moveSpeed, 0);
-            }
+                animator.SetFloat("Speed", moveSpeed);
+        }
         }
 
         private void StopChasing()

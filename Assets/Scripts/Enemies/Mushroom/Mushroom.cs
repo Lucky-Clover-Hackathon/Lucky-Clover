@@ -7,7 +7,9 @@ public class Mushroom : MonoBehaviour
 {
     public EMovement emovement;
     public Animator animator;
-
+    private static readonly int IsMoving = Animator.StringToHash("isMoving");
+    private static readonly int Punch = Animator.StringToHash("punch");
+    private static readonly int IsJumping = Animator.StringToHash("isJumping");
     private bool attack;
     private bool jump;
 
