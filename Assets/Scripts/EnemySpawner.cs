@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyA;
-    public GameObject enemyB;
+    public GameObject[] enemies;
     public GameObject player;
 
-    public int enemyTypeCnt;
     public float maxClosestToPlayerSpawnPos;
 
 
@@ -46,16 +44,10 @@ public class EnemySpawner : MonoBehaviour
                     Vector2 playerPosition = (Vector2)player.transform.position;
                     if ( Vector2.Distance(spawnPosition, playerPosition  ) > maxClosestToPlayerSpawnPos )
                     {
-                        float rE = Mathf.Floor(Random.Range(0f, enemyTypeCnt));
+                        int rE = Random.Range(0, enemies.Length);
 
-                        if (rE == 0f)
-                        {
-                            Instantiate(enemyA, spawnPosition, Quaternion.identity);
-                        }
-                        else if (rE == 1f)
-                        {
-                            Instantiate(enemyB, spawnPosition, Quaternion.identity);
-                        }
+                        Instantiate(enemies[rE], spawnPosition, Quaternion.identity);
+
                     }
                 }
             }
