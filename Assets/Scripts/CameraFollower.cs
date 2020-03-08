@@ -18,7 +18,7 @@ public class CameraFollower : MonoBehaviour
         Vector3 camPos = gameObject.transform.position;
         gameObject.transform.position.Set(camPos.x, camPos.y, -10f);
         Vector3 playerPos = player.gameObject.transform.position;
-        gameObject.transform.position = Vector3.Lerp(camPos, playerPos + new Vector3(0f,2.3f,0f), smoothingAmt*Time.deltaTime);
+        gameObject.transform.position = Vector3.Lerp( new Vector3(camPos.x,camPos.y, -10f ), playerPos + new Vector3(0f,2.3f,0f), smoothingAmt*Time.deltaTime);
         camPos = gameObject.transform.position;
         gameObject.transform.position = new Vector3(camPos.x, camPos.y, -10f);
     }
