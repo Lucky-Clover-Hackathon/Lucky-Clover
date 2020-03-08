@@ -30,9 +30,9 @@ public class PressStart : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButton("Start"))
+        if (Input.GetButton("Submit"))
         {
-            SceneManager.LoadScene("Level1");
+            LevelLoader.Load("Level1");
         }
     
         //increment timer once per frame
