@@ -30,6 +30,8 @@ public class CharacterController : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
+	private bool invincible;
+	
 	[Header("Events")]
 	[Space]
 
@@ -177,19 +179,31 @@ public class CharacterController : MonoBehaviour
 	}
 
 	public IEnumerator Harm()
+	
 	{
-		Health--;
-		UIController.UpdateHealth(Health);
-		if (Health == 0)
+		if (!invincible)
 		{
-			m_Animator.Play("leprechaun_dead");
-			m_Grounded = false;
-			m_AirControl = false;
-			yield return new WaitForSeconds(2);
-			SceneManager.UnloadSceneAsync("Base");
-			SceneManager.UnloadSceneAsync("Level1");
-			SceneManager.LoadSceneAsync("GameOver");
+			Health--;
+			UIController.UpdateHealth(Health);
+			StartCoroutine(InvincibilityFrame());
+			if (Health == 0)
+			{
+				m_Animator.Play("leprechaun_dead");
+				m_Grounded = false;
+				m_AirControl = false;
+				yield return new WaitForSeconds(2);
+				SceneManager.UnloadSceneAsync("Base");
+				SceneManager.UnloadSceneAsync("Level");
+				SceneManager.LoadSceneAsync("MainMenu");
+			}	
 		}
+	}
+
+	private IEnumerator InvincibilityFrame()
+	{
+		invincible = true;
+		yield return new WaitForSeconds(1f);
+		invincible = false;
 	}
 
 	public void Heal()
