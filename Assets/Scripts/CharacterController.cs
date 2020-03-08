@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterController : MonoBehaviour
 {
-	private int _health;
+	private int _health = 3;
 	public int Health
 	{
 		get => _health;
@@ -28,9 +28,9 @@ public class CharacterController : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	private Animator m_Animator;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-	private Vector3 m_Velocity = Vector3.zero;
+	private Vector2 m_Velocity = Vector3.zero;
 
-	private bool invincible;
+	public bool invincible;
 	
 	[Header("Events")]
 	[Space]
@@ -133,9 +133,9 @@ public class CharacterController : MonoBehaviour
 			}
 
 			// Move the character by finding the target velocity
-			Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
+			Vector2 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
 			// And then smoothing it out and applying it to the character
-			m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+			m_Rigidbody2D.velocity = Vector2.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
 			// If the input is moving the player right and the player is facing left...
 			if (move > 0 && !m_FacingRight)
@@ -181,31 +181,29 @@ public class CharacterController : MonoBehaviour
 	public IEnumerator Harm()
 	
 	{
-		if (!invincible)
+		if (!invincible)	
 		{
 			Health--;
 			UIController.UpdateHealth(Health);
-			StartCoroutine(InvincibilityFrame());
+			m_Rigidbody2D.AddForce(new Vector2(m_JumpForce*20, m_JumpForce*5));
+			
 			if (Health == 0)
 			{
 				m_Animator.Play("leprechaun_dead");
 				m_Grounded = false;
 				m_AirControl = false;
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
-				yield return new WaitForSeconds(2);
+				yield return new WaitForSecondsRealtime(2);
 				SceneManager.UnloadSceneAsync("Base");
 				SceneManager.UnloadSceneAsync("Level");
 				SceneManager.LoadSceneAsync("MainMenu");
-			}	
+			}
+			invincible = true;
+			yield return new WaitForSecondsRealtime(2);
+			invincible = false;
 		}
 	}
 
-	private IEnumerator InvincibilityFrame()
-	{
-		invincible = true;
-		yield return new WaitForSeconds(1f);
-		invincible = false;
-	}
 
 	public void Heal()
 	{

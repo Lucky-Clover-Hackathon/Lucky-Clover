@@ -141,13 +141,21 @@ public class EMovement : MonoBehaviour
         {
             if (other.collider.CompareTag("Player"))
             {
-                other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(m_FacingRight ? 50f: -50f,10f);
+                
+                //other.gameObject.GetComponent<Rigidbody2D>().velocity += new Vector2(m_FacingRight ? 50f: -50f,10f);
                 if (other.transform.position.y > gameObject.transform.position.y && Mathf.Abs(other.transform.position.x -gameObject.transform.position.x) < .5f)
                 {
                     Harm();
                 }
+                else
+                {
+                    if (!other.gameObject.GetComponent<CharacterController>().invincible)
+                    {
+                        StartCoroutine(onHarmPlayer());
 
-                StartCoroutine(onHarmPlayer());
-            }
+                    }
+                    
+                }
+}
         }
 }
