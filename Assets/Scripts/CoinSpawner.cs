@@ -33,14 +33,19 @@ public class CoinSpawner : MonoBehaviour
             {
                 foreach (Transform spawn in CoinPositions.gameObject.transform)
                 {
+                    bool isTooClose = false;
                     foreach (Transform coin in Coins.gameObject.transform)
                     {
                         if (Vector3.Distance(coin.transform.position,spawn.transform.position) < 0.1f)
                         {
-                            break;
+                            isTooClose = true;
                         }
                     }
-                    Instantiate(Coin, spawn.transform.position, new Quaternion(), Coins.transform);
+                    if (!isTooClose && Random.Range(0f,1f) % 3 <= 1)
+                    {
+                        Instantiate(Coin, spawn.transform.position + new Vector3(0,0,100), new Quaternion(), Coins.transform);
+                        break;
+                    }
                 }
             }
         }

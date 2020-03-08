@@ -19,6 +19,7 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         level = 1;
         tSinceLastWave = 0;
     }
@@ -27,11 +28,11 @@ public class EnemySpawner : MonoBehaviour
     void Update()
     {
 
-        if (tSinceLastWave < Mathf.Max(0.3f , (10 - level) * 10) ) {
+        if (tSinceLastWave > Mathf.Max(1.3f , (5.0f - level) * 5.0f) ) {
             float r = Random.Range(0f, 1f);
+            tSinceLastWave = 0;
             // TODO ADD CHANCE LOGIC
             if (r < 0.4) {
-                tSinceLastWave = 0;
                 // TRY TO SPAWN ENEMY
                 // bruteforce
                 for (int i = 0; i < 20; i++) {
