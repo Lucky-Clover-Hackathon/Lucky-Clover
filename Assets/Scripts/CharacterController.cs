@@ -185,8 +185,9 @@ public class CharacterController : MonoBehaviour
 		{
 			Health--;
 			UIController.UpdateHealth(Health);
-			m_Rigidbody2D.AddForce(new Vector2(m_JumpForce*20, m_JumpForce*5));
-			
+			//m_Rigidbody2D.AddForce(new Vector2(m_JumpForce*20, m_JumpForce*5));
+			m_Rigidbody2D.AddForce(new Vector2(0, m_JumpForce));
+
 			if (Health == 0)
 			{
 				m_Animator.Play("leprechaun_dead");

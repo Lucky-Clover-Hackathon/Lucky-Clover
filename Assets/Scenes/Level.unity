@@ -43398,6 +43398,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 370101470686497432, guid: d0c3338cc484a1043adb63cceb809029,
         type: 3}
+      propertyPath: enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 370101470686497432, guid: d0c3338cc484a1043adb63cceb809029,
+        type: 3}
       propertyPath: enemyA
       value: 
       objectReference: {fileID: 5128583311451079133, guid: 750ba26f9c1f16d4eb3b4165c9edc93f,
@@ -43418,6 +43423,11 @@ PrefabInstance:
       propertyPath: maxClosestToPlayerSpawnPos
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 370101470686497432, guid: d0c3338cc484a1043adb63cceb809029,
+        type: 3}
+      propertyPath: enemies.Array.data[0]
+      value: 
+      objectReference: {fileID: 1983554870}
     - target: {fileID: 686242733638151823, guid: d0c3338cc484a1043adb63cceb809029,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43728,6 +43738,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1983554870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5128583311451079133, guid: 750ba26f9c1f16d4eb3b4165c9edc93f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1058121045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2125874362
 GameObject:
   m_ObjectHideFlags: 0
