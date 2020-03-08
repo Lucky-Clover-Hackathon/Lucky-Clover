@@ -191,6 +191,7 @@ public class CharacterController : MonoBehaviour
 				m_Animator.Play("leprechaun_dead");
 				m_Grounded = false;
 				m_AirControl = false;
+				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
 				yield return new WaitForSeconds(2);
 				SceneManager.UnloadSceneAsync("Base");
 				SceneManager.UnloadSceneAsync("Level");
