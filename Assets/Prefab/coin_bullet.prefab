@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2875882698118671000}
   - component: {fileID: 9066919923656567841}
   - component: {fileID: 8347899486420984837}
+  - component: {fileID: 1188714010160328645}
   m_Layer: 0
   m_Name: coin_bullet
   m_TagString: Bullet
@@ -123,7 +124,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 6
 --- !u!70 &8347899486420984837
 CapsuleCollider2D:
@@ -141,3 +142,15 @@ CapsuleCollider2D:
   m_Offset: {x: -0.008858204, y: 0}
   m_Size: {x: 0.521657, y: 1}
   m_Direction: 0
+--- !u!114 &1188714010160328645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2875882698118671001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e25b7e4c65c88b5acfe8c050274998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

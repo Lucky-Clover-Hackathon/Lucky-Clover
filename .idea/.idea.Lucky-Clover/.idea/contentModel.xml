@@ -209,6 +209,7 @@
           <e p="link.xml" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="Bullet.cs" t="Include" />
           <e p="CameraFollower.cs" t="Include" />
           <e p="CharacterController.cs" t="Include" />
           <e p="Clover.cs" t="Include" />

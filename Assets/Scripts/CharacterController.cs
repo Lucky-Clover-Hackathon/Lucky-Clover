@@ -165,7 +165,8 @@ public class CharacterController : MonoBehaviour
 
 	public void Fire()
 	{
-		var bullet = Instantiate(m_GoldProjectile);
+		var position = gameObject.transform.position;
+		var bullet = Instantiate(m_GoldProjectile,  new Vector3(position.x + (m_FacingRight ? 1f : -1f),position.y,position.z), new Quaternion(0,0,0,0));
 		
 		bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(m_FacingRight ? 40f: 0f,0f);
 		
