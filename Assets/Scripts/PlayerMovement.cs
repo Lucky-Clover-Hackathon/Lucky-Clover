@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float horizontalMove = 0f;
     public float runSpeed = 40f;
+    public float maxY = 10.0f;
     private bool jump;
     private bool fire;
     private static readonly int IsMoving = Animator.StringToHash("isMoving");
@@ -51,6 +52,10 @@ public class PlayerMovement : MonoBehaviour
             cController.Fire();
         };
         jump = false;
+        if (Mathf.Abs(gameObject.transform.position.y) > maxY)
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x , -gameObject.transform.position.y, gameObject.transform.position.z);
+        }
     }
 }
    
