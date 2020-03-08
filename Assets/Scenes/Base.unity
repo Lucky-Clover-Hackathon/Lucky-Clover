@@ -517,6 +517,7 @@ MonoBehaviour:
   m_CrouchDisableCollider: {fileID: 0}
   m_GoldProjectile: {fileID: 2875882698118671001, guid: a87e1c5d8ac07eab5b32bf42ab0130c7,
     type: 3}
+  invincible: 0
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
