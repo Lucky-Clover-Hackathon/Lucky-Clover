@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.collider.CompareTag("Enemy"))
         {
-            //other.Hurt(1);
+            other.gameObject.GetComponent<EMovement>().Harm();
             
         }
         else if (other.collider.CompareTag("Player"))

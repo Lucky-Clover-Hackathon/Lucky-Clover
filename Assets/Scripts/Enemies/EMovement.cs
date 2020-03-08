@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class EMovement : MonoBehaviour
 {
-    private int _health;
+    private int _health = 3;
     public int Health
     {
         get => _health;
@@ -23,7 +23,7 @@ public class EMovement : MonoBehaviour
     const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
     private bool m_Grounded;            // Whether or not the player is grounded.
     const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
-    private Rigidbody2D m_Rigidbody2D;
+    
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
     private Vector3 m_Velocity = Vector3.zero;
     private SpriteRenderer m_spriteRenderer;
@@ -41,18 +41,20 @@ public class EMovement : MonoBehaviour
     [SerializeField]
     float moveSpeed;
     Rigidbody2D rb2d;
-
+    BoxCollider2D bc2d;
+    
     public UnityEvent OnLandEvent;
+    [SerializeField] private int pointBonus = 200;
+
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
 
         private void Awake()
-        {
-            m_Rigidbody2D = GetComponent<Rigidbody2D>();
-            m_spriteRenderer = GetComponent<SpriteRenderer>();
+        {    m_spriteRenderer = GetComponent<SpriteRenderer>();
             if (OnLandEvent == null)
                 OnLandEvent = new UnityEvent();
 
+            player = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
         private void FixedUpdate()
@@ -76,6 +78,7 @@ public class EMovement : MonoBehaviour
         private void Start()
         {
             rb2d = GetComponent<Rigidbody2D>();
+            bc2d = GetComponent<BoxCollider2D>();
         }
 
         private void Update()
@@ -110,6 +113,22 @@ public class EMovement : MonoBehaviour
         private void StopChasing()
         {
 
+        }
+
+        public void Harm()
+        {
+            Health--;
+            Debug.Log(Health);
+            if (Health == 0)
+            {
+                animator.Play("Enemy_Dead");
+                //Destroy(gameObject);
+                moveSpeed = 0;
+                rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+                bc2d.enabled = false;
+                
+                UIController.AddScore(pointBonus);
+            }
         }
 
 

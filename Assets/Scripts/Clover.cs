@@ -9,7 +9,6 @@ public class Clover : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             UIController.AddScore(500);
-            UIController.GetClover();
             Destroy(gameObject);
         }
     }
