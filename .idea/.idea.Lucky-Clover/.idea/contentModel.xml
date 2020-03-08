@@ -214,6 +214,7 @@
           <e p="CharacterController.cs" t="Include" />
           <e p="Clover.cs" t="Include" />
           <e p="Coin.cs" t="Include" />
+          <e p="CoinSpawner.cs" t="Include" />
           <e p="DontDestroyOnLoad.cs" t="Include" />
           <e p="Enemies" t="Include">
             <e p="EMovement.cs" t="Include" />

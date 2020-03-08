@@ -32,7 +32,7 @@ public class PressStart : MonoBehaviour
 
         if (Input.GetButton("Submit"))
         {
-            LevelLoader.Load("Level1");
+            LevelLoader.Load("Level");
         }
     
         //increment timer once per frame

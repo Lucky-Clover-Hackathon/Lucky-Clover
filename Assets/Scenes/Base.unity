@@ -491,6 +491,8 @@ MonoBehaviour:
   cController: {fileID: 708535700}
   cAnimator: {fileID: 708535696}
   runSpeed: 40
+  maxY: 10
+  maxX: 8
 --- !u!114 &708535700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,7 +532,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 708535695}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a793f99367cd9ab43b4c179d91b59822, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
